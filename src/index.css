@@ -4,6 +4,23 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+p {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+
 .header-content {
     background-color: #1F2937;
     color: #F9FAF8;
@@ -13,7 +30,7 @@
 
 .header-section {
     flex: 1;
-    margin: 1%;
+    padding: 1%;
 }
 
 .header-section h1 {
@@ -26,28 +43,48 @@
 .header-section p {
     font-size: 18px;
     color: #E5E7EB;
+    padding-bottom: 4%;
 }
 
 .navbar {
     background-color: #1F2937;
     color: #F9FAF8;
     display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
 }
 
-.navbar-item {
+.navbar-logo {
     flex: 1;
+    font-size: 24px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+.navbar-links {
+    display: flex;
+    flex: 1;
+    color: #F9FAF8;
+    font-size: 18px;
+}
+
+.navbar-links p {
+    padding-left: 5%;
 }
 
 button {
     background-color: #3882F6;
     color: #F9FAF8;
     font-weight: bold;
+    font-size: 16px;
     outline: none;
     border: none;
-    padding: 1%;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
     border-radius: 5px;
+    white-space: nowrap;
 }
 
 .image-placeholder {
@@ -61,8 +98,17 @@ button {
     font-size: 14px;
 }
 
-.quote {
-    background-color: #E5E7EB;
+.information-section {
+    background-color: #F9FAF8;
+    overflow: hidden;
+    padding: 0 10% 5% 10%;
+}
+
+.information-section h1 {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
 }
 
 .image-showcase {
@@ -75,6 +121,7 @@ button {
 .image {
     flex: 1;
     justify-items: center;
+    align-items: center;
     margin: 3%;
 }
 
@@ -89,7 +136,6 @@ button {
     font-size: 14px;
     border: 2px solid #3882F6;
     border-radius: 10%;
-    margin: 10px;
 }
 
 .image-showcase h1 {
@@ -105,58 +151,76 @@ button {
     font-weight: 100;
 }
 
-.call-to-action {
-    background-color: #3882F6;
-    color: #F9FAF8;
-    border-radius: 5%;
-    padding: 2%;
-    margin: 10%;
+.quote {
+    background-color: #E5E7EB;
+    overflow: hidden;
+    padding: 5% 17% 5% 17%;
 }
 
-.call-to-action button {
-    outline: 2px solid #F9FAF8;
-}
-
-/* Text styling */
-.header-link-text {
-    font-size: 18px;
-    color: #E5E7EB;
-}
-
-
-.header-logo-text {
-    font-size: 24px;
-    font-weight: bold;
-    color: #F9FAF8;
-}
-
-.information-header-text {
-    color: #1F2937;
-    font-size: 36px;
-    font-weight: 900;
-    text-align: center;
-}
-
-.qoute-text {
+.quote h2 {
     font-size: 36px;
     color: #1F2937;
     font-style: italic;
     font-weight: 100;
+    margin: 0;
 }
 
-.qoute-author-text {
+.quote h3 {
     font-size: 22px;
     text-align: right;
+    margin: 5% 0 0 0;
 }
 
-/* END */
+.call-to-action-section {
+    display: flex;
+    padding: 5% 10% 5% 10%;
+}
+
+.call-to-action-box {
+    width: 100%;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 5px;
+    display: flex;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+.call-to-action-text {
+    align-items: center;
+}
+
+.call-to-action-text h3 {
+    padding-right: 5%;
+}
+
+.call-to-action-text p {
+    padding-right: 5%;
+    font-weight: 100;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+}
+
+.call-to-action-box button {
+    outline: 2px solid #F9FAF8;
+    white-space: nowrap;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
 
 footer {
     background-color: #1F2937;
     color: #F9FAF8;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
